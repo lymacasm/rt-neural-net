@@ -3,10 +3,6 @@
 
 class TestNeuronBase: public NeuronBase
 {
-public:
-    ~TestNeuronBase() 
-    {
-    }
 protected:
     bool ActivationFunction(signal_t& result)
     {

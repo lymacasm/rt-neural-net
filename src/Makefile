@@ -40,7 +40,6 @@ vpath %.cpp $(SRC_DIRECTORIES)
 $(OUTDIR)/%.o: %.cpp
 	$(CC) $(CFLAGS) $(INCLUDES) -c $^ -o $@
 
-
 $(OUTDIR)/Test%.exe: $(TESTSDIR)/Test%.cpp
 	$(CC) $(CFLAGS) $(INCLUDES) -I$(TESTSDIR) ./$^ -o $@ $(OUTPUTS)	
 
